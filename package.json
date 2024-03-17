@@ -4,7 +4,8 @@
   "description": "Sample frontend app",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build" // Added build script
   },
   "dependencies": {
     "react": "^17.0.2",
