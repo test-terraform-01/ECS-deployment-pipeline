@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Sample frontend app",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build" // Add this line
-  },
+    "build": "react-scripts build"
+},
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
