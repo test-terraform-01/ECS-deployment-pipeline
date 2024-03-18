@@ -55,7 +55,7 @@ jobs:
       - name: Login to AWS ECR
         uses: aws-actions/amazon-ecr-login@v1
         with:
-          registry: your-ecr-registry-url
+          registry: 891846683173.dkr.ecr.ap-south-1.amazonaws.com/protial-prod-ecr
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
@@ -63,5 +63,5 @@ jobs:
         run: |
           # Add commands to build your Docker image for the backend
           # Example: docker build -t your-image-name .
-          # Example: docker tag your-image-name:latest your-ecr-registry-url/your-image-name:latest
-          # Example: docker push your-ecr-registry-url/your-image-name:latest
+          # Example: docker tag your-image-name:latest 891846683173.dkr.ecr.ap-south-1.amazonaws.com/protial-prod-ecryour-image-name:latest
+          # Example: docker push 891846683173.dkr.ecr.ap-south-1.amazonaws.com/protial-prod-ecr/your-image-name:latest
