@@ -3,7 +3,8 @@ name: Full Stack Deployment Pipeline
 on:
   push:
     branches:
-      - main
+      - frontend
+      - backend
 
 jobs:
   frontend_build_and_deploy:
