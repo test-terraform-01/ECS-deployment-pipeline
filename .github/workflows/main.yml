@@ -22,7 +22,7 @@ jobs:
       - name: Upload Docker image to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --follow-symlinks --delete  # Removed --acl public-read
+          args: --follow-symlinks --delete
         env:
           AWS_S3_BUCKET: protial-prod-s3-b
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
